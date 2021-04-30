@@ -1,5 +1,6 @@
 div.statistics-container {
   justify-content: space-between;
+  margin-top: 25px;
   padding: 0;
   div.items {
     div.header {
@@ -11,8 +12,64 @@ div.statistics-container {
         }
       }
     }
+    div.lists {
+      margin-top: 15px;
+      box-shadow: 40px 60px 1000px 1px #80bdff3b;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      ol {
+        list-style: none;
+        counter-reset: my-awesome-counter;
+        width: 100%;
+        padding: 0 20px;
+        li {
+          counter-increment: my-awesome-counter;
+          margin-bottom: 20px;
+          font-size: 0.8em;
+          font-weight: 800;
+        }
+        li:before {
+          content: counter(my-awesome-counter);
+          background: #80bdff57;
+          padding: 3px 5px;
+          border-radius: 50%;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+        span {
+          background: #80bdff57;
+          color: #69b2ff;
+          padding: 3px 5px;
+          font-size: 0.7em;
+          border-radius: 10px;
+          float:right;
+        }
+        .negative {
+          background: #ff00003f;
+          color: #fa1d1d;
+        }
+      }
+      .btn {
+        background: #80bdff57;
+        border: none;
+        color: #69b2ff;
+        font-size: 0.8em;
+        margin: {
+          right: auto;
+          left: auto;
+        }
+      }
+    }
   }
-  // div.sales {
-
-  // }
+  div.sales {
+    div.header {
+      justify-content: space-between;
+      h4 {
+        font: {
+          size: 1.0em;
+          weight: 800;
+        }
+      }
+    }
+  }
 }
