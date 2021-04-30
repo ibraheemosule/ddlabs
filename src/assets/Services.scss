@@ -1,5 +1,28 @@
-.emoji-wrapper {
+$lightBlue: #80bdff57;
+
+div.emoji-wrapper {
+  justify-content: space-between;
+  margin-top: 20px;
   .col {
-    
+    padding: 0;
+    flex-grow: 0;
+    div.content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $lightBlue;
+      border-radius: 10px;
+      width: 3em;
+      height: 3em;
+    }
+    p.text {
+      font: {
+        size: 0.7em;
+        weight: 800;
+      }
+      color: gray;
+      text-align: center;
+      margin-top: 10px;
+    }
   }
 }

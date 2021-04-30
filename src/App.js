@@ -16,7 +16,7 @@ function App() {
         </Col>
         <Col sm={10} className="col-sm-10">
         <Row>
-          <Col xs={10}>
+          <Col xs={9}>
             <MainContent />
         </Col>
         <Col>

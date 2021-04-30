@@ -7,6 +7,7 @@ import InputGroup from "react-bootstrap/InputGroup"
 import FormControl from "react-bootstrap/FormControl"
 import Button from "react-bootstrap/Button";
 import Services from "./Services";
+import Statistics from "./Statistics";
 
 const MainContent = () => {
 
@@ -36,6 +37,7 @@ const MainContent = () => {
         <h4>. .</h4>
       </Row>
       <Services />
+      <Statistics />
     </Container>
   )
 }

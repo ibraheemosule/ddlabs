@@ -3,7 +3,7 @@ $buttonColor: #69b2ff;
 
 .main {
   .search-field {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     .col-sm-9 {
       padding: 0;
       .input-group {
@@ -12,11 +12,11 @@ $buttonColor: #69b2ff;
           margin-right: 0;
           span#basic-addon1 {
             background-color: $lightBlue;
-            border-right: 0;
+            border: 0;
           }
         }
         input.form-control {
-          border-left: 0;
+          border: 0;
           background-color: $lightBlue;
           height: 100%;
         }
@@ -33,10 +33,21 @@ $buttonColor: #69b2ff;
           font-size: 0.8em;
           height: 100%;
         }
+        @media (max-width: 565px) {
+          .btn-primary {
+            margin-top: 10px;
+          }
+        }
       }
     }
   }
  div.categories {
     justify-content: space-between;
+    h4 {
+      font: {
+        size: 1.0em;
+        weight: 800;
+      }
+    }
   }
 }
