@@ -4,7 +4,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import TheNavigation from "./components/TheNavigation";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
+import MainContent from "./components/MainContent"
 
 function App() {
   return (
@@ -13,14 +14,13 @@ function App() {
         <Col sm={2}>
         <TheNavigation />
         </Col>
-        <Col>
+        <Col sm={10} className="col-sm-10">
         <Row>
-          <Col>
-        this is another
-        <Button variant="info">hey brother</Button>
+          <Col xs={10}>
+            <MainContent />
         </Col>
         <Col>
-        this is another
+
         </Col>
         </Row>
         </Col>

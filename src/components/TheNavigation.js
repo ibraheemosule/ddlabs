@@ -1,3 +1,4 @@
+import "../assets/TheNavigation.scss";
 import Navbar from "react-bootstrap/Navbar"
 import {List} from "react-bootstrap-icons"
 import {HouseDoorFill} from "react-bootstrap-icons"
@@ -13,22 +14,24 @@ import {useState} from "react";
 
 const TheNavigation = () => {
 const { Brand } = Navbar;
-const [status,,] = useState(true)
+const [status,setStatus] = useState(true)
 const toggle = (e) => {
   e.preventDefault()
   let elements = document.getElementsByClassName('option-text');
-  // if (status) {
-  //  const answer = elements.map((el) => {
-  //     el.style.display = 'none';
-  //     setStatus(!status)
-  //   })}
-  //   else {
-  //     const answer = elements.map((el) => {
-  //       el.style.display = 'inline';
-  //       setStatus(!status)
-  //     })
-  //   }
-  console.log(status, elements)
+  let toolTip = document.getElementsByClassName('dropdown-content');
+  if(status) {
+    for(let i = 0; i < elements.length; i++){
+      toolTip[i].style.visibility = "hidden";
+      elements[i].style.display = "inline";
+    }
+    setStatus(!status)
+  } else {
+    for(let i = 0; i < elements.length; i++){
+      elements[i].style.display = "none";
+      toolTip[i].style.visibility = "visible";
+    }
+    setStatus(!status)
+  }
   }
   return (
 <nav className="navbar">
@@ -43,9 +46,7 @@ const toggle = (e) => {
       <span className="option-text">Home</span>
     </button>
     <div className="dropdown-content">
-      <a href="https://facebook.com">Link 1</a>
-      <a href="https://facebook.com">Link 2</a>
-      <a href="https://facebook.com">Link 3</a>
+      <a href="https://facebook.com">Home</a>
     </div>
     </li>
 
@@ -55,9 +56,7 @@ const toggle = (e) => {
       <span className="option-text">Favourites</span>
     </button>
     <div className="dropdown-content">
-      <a href="https://facebook.com">Link 1</a>
-      <a href="https://facebook.com">Link 2</a>
-      <a href="https://facebook.com">Link 3</a>
+      <a href="https://facebook.com">Favourites</a>
     </div>
     </li>
 
@@ -67,21 +66,17 @@ const toggle = (e) => {
       <span className="option-text">Bookmarks</span>
     </button>
     <div className="dropdown-content">
-      <a href="https://facebook.com">Link 1</a>
-      <a href="https://facebook.com">Link 2</a>
-      <a href="https://facebook.com">Link 3</a>
+      <a href="https://facebook.com">Bookmarks</a>
     </div>
     </li>
 
     <li className="dropdown">
     <button className="dropbtn">
       <Cursor />
-      <span className="option-text">Send Items</span>
+      <span className="option-text">Sent Items</span>
     </button>
     <div className="dropdown-content">
-      <a href="https://facebook.com">Link 1</a>
-      <a href="https://facebook.com">Link 2</a>
-      <a href="https://facebook.com">Link 3</a>
+      <a href="https://facebook.com">Sent Items</a>
     </div>
     </li>
 
@@ -91,9 +86,7 @@ const toggle = (e) => {
       <span className="option-text">Trash</span>
     </button>
     <div className="dropdown-content">
-      <a href="https://facebook.com">Link 1</a>
-      <a href="https://facebook.com">Link 2</a>
-      <a href="https://facebook.com">Link 3</a>
+      <a href="https://facebook.com">Trash</a>
     </div>
     </li>
 
@@ -103,47 +96,40 @@ const toggle = (e) => {
       <span className="option-text">Countdown</span>
     </button>
     <div className="dropdown-content">
-      <a href="https://facebook.com">Link 1</a>
-      <a href="https://facebook.com">Link 2</a>
-      <a href="https://facebook.com">Link 3</a>
+      <a href="https://facebook.com">Countdown</a>
     </div>
     </li>
+    <ul className="footer-nav">
+      <li className="dropdown">
+      <button className="dropbtn">
+        <Gear />
+        <span className="option-text">Settings</span>
+      </button>
+      <div className="dropdown-content">
+        <a href="https://facebook.com">Settings</a>
+      </div>
+      </li>
 
-    <li className="dropdown">
-    <button className="dropbtn">
-      <Gear />
-      <span className="option-text">Settings</span>
-    </button>
-    <div className="dropdown-content">
-      <a href="https://facebook.com">Link 1</a>
-      <a href="https://facebook.com">Link 2</a>
-      <a href="https://facebook.com">Link 3</a>
-    </div>
-    </li>
+      <li className="dropdown">
+      <button className="dropbtn">
+        <Person />
+        <span className="option-text">Profile</span>
+      </button>
+      <div className="dropdown-content">
+        <a href="https://facebook.com">Profile</a>
+      </div>
+      </li>
 
-    <li className="dropdown">
-    <button className="dropbtn">
-      <Person />
-      <span className="option-text">Profile</span>
-    </button>
-    <div className="dropdown-content">
-      <a href="https://facebook.com">Link 1</a>
-      <a href="https://facebook.com">Link 2</a>
-      <a href="https://facebook.com">Link 3</a>
-    </div>
-    </li>
-
-    <li className="dropdown">
-    <button className="dropbtn">
-      <FileCheck />
-      <span className="option-text">Check files</span>
-    </button>
-    <div className="dropdown-content">
-      <a href="https://facebook.com">Link 1</a>
-      <a href="https://facebook.com">Link 2</a>
-      <a href="https://facebook.com">Link 3</a>
-    </div>
-    </li>
+      <li className="dropdown">
+      <button className="dropbtn">
+        <FileCheck />
+        <span className="option-text">Check Files</span>
+      </button>
+      <div className="dropdown-content">
+        <a href="https://facebook.com">Check Files</a>
+      </div>
+      </li>
+    </ul>
   </ul> 
 </nav>
   )
