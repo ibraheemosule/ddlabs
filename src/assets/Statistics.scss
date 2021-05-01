@@ -3,6 +3,7 @@ div.statistics-container {
   margin-top: 25px;
   padding: 0;
   div.items {
+    margin-bottom: 25px;
     div.header {
       justify-content: space-between;
       h4 {
@@ -14,7 +15,7 @@ div.statistics-container {
     }
     div.lists {
       margin-top: 15px;
-      box-shadow: 40px 60px 1000px 1px #80bdff3b;
+      box-shadow: 20px 20px 40px -20px #80bdff3b;
       padding-top: 25px;
       padding-bottom: 25px;
       ol {

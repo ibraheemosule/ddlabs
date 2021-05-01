@@ -1,0 +1,58 @@
+.orders {
+  margin: 25px 0;
+  padding: 0;
+  div.header {
+    justify-content: space-between;
+    h4 {
+      font: {
+        size: 1.0em;
+        weight: 800;
+      }
+    }
+  }
+  div.table-container {
+    .col {
+      .table-responsive-sm {
+        padding: 0 30px;
+        table {
+          border-color:  #80bdff3b;
+          font-size: .8em;
+          tr{
+            td,th {
+              label {
+                margin-bottom: 0;
+                span {
+                  padding: 0.5rem 1rem;
+                }
+              }
+            }
+            .fail, .pass {
+              text-align: center;
+              span {
+                padding: 0.4em 0.8em;
+                border-radius: 0.5em;
+                font-size: 0.7em;
+                font-weight: bold;
+              }
+            }
+            .pass {
+              span {
+              background: #80bdff3b;
+              color: #69b2ff;
+              }
+            }
+            .fail {
+              span {
+                background: #ff00003f;
+                color: #fa1d1d;
+              }
+            }
+          }
+          tr.title {
+            background: #80bdff3b;
+          }
+        }
+      }
+    }
+  }
+}

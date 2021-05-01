@@ -4,8 +4,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import TheNavigation from "./components/TheNavigation";
 import Col from "react-bootstrap/Col";
-// import Button from "react-bootstrap/Button";
-import MainContent from "./components/MainContent"
+import MainContent from "./components/MainContent";
+import TheAside from "./components/TheAside";
 
 function App() {
   return (
@@ -16,11 +16,11 @@ function App() {
         </Col>
         <Col sm={10} className="col-sm-10">
         <Row>
-          <Col xs={9}>
+          <Col sm={9}>
             <MainContent />
         </Col>
-        <Col>
-
+        <Col sm={3}>
+          <TheAside />
         </Col>
         </Row>
         </Col>

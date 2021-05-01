@@ -51,3 +51,8 @@ $buttonColor: #69b2ff;
     }
   }
 }
+@media (max-width: 576px) {
+  .main {
+    padding-left: 0;
+  }
+}

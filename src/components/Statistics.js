@@ -4,7 +4,7 @@ import '../assets/Statistics.scss';
 const Statistics = () => {
   return (
     <Row className="statistics-container">
-      <Col xs={3} className="items">
+      <Col sm={3} className="items">
       <Row className="header">
         <h4>Profitable items</h4>
         <h4>. .</h4>
@@ -18,10 +18,14 @@ const Statistics = () => {
         <Button>See all activities</Button>
       </Row>
       </Col>
-      <Col xs={8}className="sales">
+      <Col sm={8}className="sales">
       <Row className="header">
         <h4>Sales statistics</h4>
         <h4>. .</h4>
+      </Row>
+      <Row>
+        <Col>
+        </Col>
       </Row>
       </Col>
     </Row>
