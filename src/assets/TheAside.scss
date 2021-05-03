@@ -1,58 +1,160 @@
-div.items {
-  div.header {
-    justify-content: space-between;
-    h4 {
-      font: {
-        size: 1.0em;
-        weight: 800;
+
+.the-aside {
+  border-left: 1px solid #80bdff57;
+  height: 100%;
+  div.items {
+    div.header {
+      justify-content: space-between;
+      h4 {
+        font: {
+          size: 1.0em;
+          weight: 800;
+        }
+      }
+    }
+    div.total-orders {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      box-shadow: 20px 20px 40px -20px #80bdff3b;
+      padding: 25px 20px;
+      .row {
+        border-bottom: 1px solid #80bdff3b;
+        width: 100%;
+        margin: 0;
+      .col-md-6 {
+        padding: {
+          right: 0;
+          left: 0;
+        }
+        h4, p {
+          font: {
+            size: 1.0em;
+            weight: 800;
+          }
+          small {
+            color: #fa1d1d;
+            font-weight: 900;
+          }
+        }
+        p {
+          font-size: 0.7em;
+          margin: 0;
+        }
+        span {
+          color:  #69b2ff;
+          font-size: 0.7em;
+          font-weight: bold;
+          display: block;
+          text-align: right;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      }
+      .total-items {
+        border-bottom: none;
+        margin-top: 10px;
+      }
+    }
+    @media (max-width: 768px) {
+      div.total-orders {
+        padding: {
+          right: 0;
+          left: 0;
+        }
       }
     }
   }
-  div.lists {
-    margin-top: 15px;
-    box-shadow: 20px 20px 40px -20px #80bdff3b;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    ol {
-      list-style: none;
-      counter-reset: my-awesome-counter;
-      width: 100%;
-      padding: 0 20px;
-      li {
-        counter-increment: my-awesome-counter;
-        margin-bottom: 20px;
-        font-size: 0.8em;
-        font-weight: 800;
-      }
-      li:before {
-        content: counter(my-awesome-counter);
-        background: #80bdff57;
-        padding: 3px 5px;
-        border-radius: 50%;
-        font-weight: bold;
-        margin-right: 10px;
-      }
-      span {
-        background: #80bdff57;
-        color: #69b2ff;
-        padding: 3px 5px;
-        font-size: 0.7em;
-        border-radius: 10px;
-        float:right;
-      }
-      .negative {
-        background: #ff00003f;
-        color: #fa1d1d;
+  div.total-returns {
+    border: 1px solid #80bdff3b;
+    border-radius: 10px;
+    div.total-orders {
+      box-shadow: none;
+    }
+  }
+  div.activities {
+    margin: 0;
+    padding: 0;
+    .header {
+      justify-content: space-between;
+      margin: 25px 0 20px 0;
+      h4 {
+        font: {
+          size: 1.0em;
+          weight: 800;
+        }
       }
     }
-    .btn {
-      background: #80bdff57;
-      border: none;
-      color: #69b2ff;
-      font-size: 0.8em;
+    div.total-orders {
+      padding: {
+        top: 0;
+        bottom: 0;
+      }
+      .col-md-3,
+      .col-md-2,
+      .col-md-7,
+      .col-md-10 {
+        padding: {
+          right: 0;
+          left: 0;
+        }
+        margin-bottom: 12px;
+        p {
+          font: {
+            size: 1.0em;
+            weight: 800;
+          }
+        }
+        p {
+          font-size: 0.7em;
+          margin: 0 0 0 1em;
+        }
+        p.date, p.date-2 {
+          font-size: 0.6em;
+          margin: 0 0 0 1em;
+          color: #808080;
+        }
+        span {
+          color: #fa1d1d;
+          font-size: 0.7em;
+          font-weight: bold;
+          display: block;
+          text-align: right;
+        }
+        span.price {
+          color: #69b2ff;
+        }
+        div.content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #80bdff57;
+          border-radius: 10px;
+          width: 100%;
+          height: 100%;
+          margin: 0.1em 0.2em 0.1em 0;
+          span {
+            font-size: 1em;
+            text-align: center;
+            margin: 0 !important;
+            margin-bottom: 0.2em !important;
+          }
+        }
+      }
+    }
+  }
+  div.profile {
+    margin-bottom: 15px;
+    div.total-orders {
       margin: {
-        right: auto;
-        left: auto;
+        top: 10px;
+        bottom: 0;
+      }
+      .row {
+        border-bottom: none;
       }
     }
   }

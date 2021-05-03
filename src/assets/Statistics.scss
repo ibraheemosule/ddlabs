@@ -23,6 +23,7 @@ div.statistics-container {
         counter-reset: my-awesome-counter;
         width: 100%;
         padding: 0 20px;
+        overflow: auto;
         li {
           counter-increment: my-awesome-counter;
           margin-bottom: 20px;
@@ -50,6 +51,12 @@ div.statistics-container {
           color: #fa1d1d;
         }
       }
+      @media (max-width: 768px) {
+        ol {
+          padding-left: 0;
+
+        }
+      }
       .btn {
         background: #80bdff57;
         border: none;
@@ -71,6 +78,35 @@ div.statistics-container {
           weight: 800;
         }
       }
+    }
+    div.stats {
+      .line {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15%;
+        margin-left: 4.5%;
+        margin-right: 4.5%;
+        align-items: flex-end;
+    }
+    .blue {
+        width: 5.2px;
+        height: 90px;
+        background-color: rgb(76, 179, 243);
+        border-top-right-radius: 0.9em;
+        border-top-left-radius: 0.9em;
+    }
+    .eight {
+        height: 23px;
+    }
+    .seven {
+        height: 40px;
+    }
+    .nine {
+        height: 32px;
+    }
+    .ten {
+        height: 50px;
+    }
     }
   }
 }

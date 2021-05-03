@@ -6,6 +6,7 @@ div.emoji-wrapper {
   .col {
     padding: 0;
     flex-grow: 0;
+    cursor: pointer;
     div.content {
       display: flex;
       align-items: center;
@@ -15,6 +16,9 @@ div.emoji-wrapper {
       width: 3em;
       height: 3em;
     }
+    div.content:hover {
+      background: #69b2ff;
+    }
     p.text {
       font: {
         size: 0.7em;
@@ -23,6 +27,9 @@ div.emoji-wrapper {
       color: gray;
       text-align: center;
       margin-top: 10px;
+    }
+    p.text:hover {
+      color: #69b2ff;
     }
   }
 }

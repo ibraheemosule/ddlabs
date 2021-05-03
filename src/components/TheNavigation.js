@@ -1,15 +1,10 @@
 import "../assets/TheNavigation.scss";
 import Navbar from "react-bootstrap/Navbar"
-import {List} from "react-bootstrap-icons"
-import {HouseDoorFill} from "react-bootstrap-icons"
-import {Star} from "react-bootstrap-icons"
-import {BookmarkStar} from "react-bootstrap-icons"
-import {Cursor} from "react-bootstrap-icons"
-import {Trash} from "react-bootstrap-icons"
-import {Clock} from "react-bootstrap-icons"
-import {Gear} from "react-bootstrap-icons"
-import {Person} from "react-bootstrap-icons"
-import {FileCheck} from "react-bootstrap-icons"
+import {
+  BoxArrowRight,HouseDoorFill,Star,
+  BookmarkStar,Cursor,Trash,ShieldFillCheck,
+  Clock,Gear, Person
+} from "react-bootstrap-icons";
 import {useState} from "react";
 
 const TheNavigation = () => {
@@ -37,7 +32,7 @@ const toggle = (e) => {
 <nav className="navbar">
   <ul>
   <Brand><button className="dropbtn" onClick={toggle}>
-      <List />
+      <ShieldFillCheck />
     </button>
   </Brand>
   <li className="dropdown">
@@ -122,7 +117,7 @@ const toggle = (e) => {
 
       <li className="dropdown">
       <button className="dropbtn">
-        <FileCheck />
+        <BoxArrowRight/>
         <span className="option-text">Check Files</span>
       </button>
       <div className="dropdown-content">

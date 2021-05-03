@@ -5,12 +5,18 @@ const Orders = () => {
   return (
     <Col className="orders">
     <Row className="header">
-    <h4>Categories</h4>
+    <Col sm={5}>
+      <Row>
+        <h4>All Products</h4>
+        <h4>Ordered</h4>
+        <h4>Returned</h4>
+      </Row>
+    </Col>
     <h4>. .</h4>
     </Row>
     <Row className="table-container">
         <Col>
-          <Table responsive="sm">
+          <Table responsive="md">
             <thead>
               <tr className="title">
                 <th><label><input type="checkbox"/><span>Product Name</span></label></th>

@@ -24,7 +24,26 @@ const Statistics = () => {
         <h4>. .</h4>
       </Row>
       <Row>
-        <Col>
+        <Col className="stats">
+        <div class="line">
+                        <div class="blue seven"></div> 
+                        <div class="blue eight"></div> 
+                        <div class="blue eleven"></div> 
+                        <div class="blue nine"></div> 
+                        <div class="blue ten"></div> 
+                        <div class="blue eight"></div> 
+                        <div class="blue nine"></div> 
+                        <div class="blue eleven"></div> 
+                        <div class="blue eight"></div> 
+                        <div class="blue eight"></div> 
+                        <div class="blue seven"></div> 
+                        <div class="blue nine"></div> 
+                        <div class="blue eleven"></div> 
+                        <div class="blue ten"></div> 
+                        <div class="blue nine"></div> 
+                        <div class="blue eight"></div> 
+                    </div>
+                    
         </Col>
       </Row>
       </Col>
