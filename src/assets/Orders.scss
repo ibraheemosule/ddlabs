@@ -5,7 +5,7 @@
     justify-content: space-between;
     border-bottom: 1px solid #80bdff3b;
     margin-bottom: 15px;
-    .col-sm-5 {
+    .col-lg-5 {
       .row {
         justify-content: space-between;
         h4 {
@@ -73,11 +73,6 @@
           tr.title {
             background: #80bdff3b;
           }
-        }
-      }
-      @media (max-width: 768px) {
-        .table-responsive-sm {
-
         }
       }
     }

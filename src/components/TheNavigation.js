@@ -14,7 +14,8 @@ const toggle = (e) => {
   e.preventDefault()
   let elements = document.getElementsByClassName('option-text');
   let toolTip = document.getElementsByClassName('dropdown-content');
-  if(status) {
+  let width = window.screen.availWidth;
+  if(status && width > 576) {
     for(let i = 0; i < elements.length; i++){
       toolTip[i].style.visibility = "hidden";
       elements[i].style.display = "inline";
@@ -30,6 +31,7 @@ const toggle = (e) => {
   }
   return (
 <nav className="navbar">
+  <div className="the-nav">
   <ul>
   <Brand><button className="dropbtn" onClick={toggle}>
       <ShieldFillCheck />
@@ -41,7 +43,7 @@ const toggle = (e) => {
       <span className="option-text">Home</span>
     </button>
     <div className="dropdown-content">
-      <a href="https://facebook.com">Home</a>
+      <a href="/">Home</a>
     </div>
     </li>
 
@@ -51,7 +53,7 @@ const toggle = (e) => {
       <span className="option-text">Favourites</span>
     </button>
     <div className="dropdown-content">
-      <a href="https://facebook.com">Favourites</a>
+      <a href="/">Favourites</a>
     </div>
     </li>
 
@@ -61,7 +63,7 @@ const toggle = (e) => {
       <span className="option-text">Bookmarks</span>
     </button>
     <div className="dropdown-content">
-      <a href="https://facebook.com">Bookmarks</a>
+      <a href="/">Bookmarks</a>
     </div>
     </li>
 
@@ -71,7 +73,7 @@ const toggle = (e) => {
       <span className="option-text">Sent Items</span>
     </button>
     <div className="dropdown-content">
-      <a href="https://facebook.com">Sent Items</a>
+      <a href="/">Sent Items</a>
     </div>
     </li>
 
@@ -81,7 +83,7 @@ const toggle = (e) => {
       <span className="option-text">Trash</span>
     </button>
     <div className="dropdown-content">
-      <a href="https://facebook.com">Trash</a>
+      <a href="/">Trash</a>
     </div>
     </li>
 
@@ -91,17 +93,18 @@ const toggle = (e) => {
       <span className="option-text">Countdown</span>
     </button>
     <div className="dropdown-content">
-      <a href="https://facebook.com">Countdown</a>
+      <a href="/">Countdown</a>
     </div>
     </li>
-    <ul className="footer-nav">
+  </ul>
+  <ul className="footer-nav">
       <li className="dropdown">
       <button className="dropbtn">
         <Gear />
         <span className="option-text">Settings</span>
       </button>
       <div className="dropdown-content">
-        <a href="https://facebook.com">Settings</a>
+        <a href="/">Settings</a>
       </div>
       </li>
 
@@ -111,7 +114,7 @@ const toggle = (e) => {
         <span className="option-text">Profile</span>
       </button>
       <div className="dropdown-content">
-        <a href="https://facebook.com">Profile</a>
+        <a href="/">Profile</a>
       </div>
       </li>
 
@@ -121,11 +124,11 @@ const toggle = (e) => {
         <span className="option-text">Check Files</span>
       </button>
       <div className="dropdown-content">
-        <a href="https://facebook.com">Check Files</a>
+        <a href="/">Check Files</a>
       </div>
       </li>
     </ul>
-  </ul> 
+  </div>
 </nav>
   )
 }

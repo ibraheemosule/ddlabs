@@ -80,6 +80,48 @@ div.statistics-container {
       }
     }
     div.stats {
+      border: 1px solid #80bdff57;
+      border-top: none;
+      border-bottom: none;
+      margin-top: 25px;
+      .percent {
+        .per {
+          display: inline-block;
+          width: 25%;
+          text-align: center;
+          border: 1px solid #80bdff57;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: 0.7em;
+          font-weight: 800;
+          color: #808080;
+          
+      
+      }
+      .ce {
+          border-top-style: none;
+          border-bottom-style: none;
+          border-left-style: none;
+      }
+      .de {
+          border-top-style: none;
+          border-bottom-style: none;
+          border-left-style: none;
+      }
+      .ee {
+          border-top-style: none;
+          border-bottom-style: none;
+          border-left-style: none;
+      }
+      .fe {
+          border-top-style: none;
+          border-bottom-style: none;
+          border-left-style: none;
+          border-right-style: none;
+      }
+      }
+      
+      
       .line {
         display: flex;
         justify-content: space-between;
@@ -107,6 +149,29 @@ div.statistics-container {
     .ten {
         height: 50px;
     }
+
+    
+
+    }
+    div.first {
+      border-right: none;
+    }
+    div.week {
+      margin: 25px;
+      font-size: 0.7em;
+      font-weight: 800;
+      color: #808080;
+      text-align: center;
+    }
+    div.numbers {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      span {
+        font-size: 0.7em;
+        font-weight: 800;
+        color: #808080; 
+      }
     }
   }
 }

@@ -5,7 +5,7 @@ const Orders = () => {
   return (
     <Col className="orders">
     <Row className="header">
-    <Col sm={5}>
+    <Col md={8} lg={5}>
       <Row>
         <h4>All Products</h4>
         <h4>Ordered</h4>

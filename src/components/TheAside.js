@@ -54,29 +54,29 @@ const TheAside = () => {
       <Col className="items total-returns">
       <Row className="total-orders">
         <Row>
-          <Col md={2}>
+          <Col sm="auto" lg={2}>
           <div className="content">
             <Emoji text="🎧"  onlyEmojiClassName="emoji"/>
           </div>
           </Col>
-         <Col md={7}>
+         <Col lg={7}>
           <p>Sony 1000Xm3</p>
           <p className="date">Sept 12, 2021</p>
           </Col>
-         <Col md={3}><span>- $160</span></Col>
+         <Col lg={3}><span>- $160</span></Col>
         </Row>
         <Row className="total-items">
         <Row>
-          <Col md={2}>
+          <Col sm="auto" lg={2}>
           <div className="content">
             <Emoji text="📱"  onlyEmojiClassName="emoji"/>
           </div>
           </Col>
-         <Col md={7}>
+         <Col lg={7}>
           <p>Sony 1000Xm3</p>
           <p className="date">Sept 12, 2021</p>
           </Col>
-         <Col md={3}><span className="price">- $160</span></Col>
+         <Col lg={3}><span className="price">- $160</span></Col>
         </Row>
         </Row>
       </Row>
@@ -92,7 +92,7 @@ const TheAside = () => {
       <Col className="items total-returns profile">
       <Row className="total-orders">
         <Row>
-          <Col md={2}>
+          <Col sm="auto" md={2}>
           <div className="content">
             <Emoji text="👨🏾"  onlyEmojiClassName="emoji"/>
           </div>
@@ -108,7 +108,7 @@ const TheAside = () => {
       <Col className="items total-returns profile">
       <Row className="total-orders">
         <Row>
-          <Col md={2}>
+          <Col sm="auto" md={2}>
           <div className="content">
             <Emoji text="👨🏼"  onlyEmojiClassName="emoji"/>
           </div>
@@ -125,7 +125,7 @@ const TheAside = () => {
       <Col className="items total-returns profile">
       <Row className="total-orders">
         <Row>
-          <Col md={2}>
+          <Col sm="auto" md={2}>
           <div className="content">
             <Emoji text="👱🏽"  onlyEmojiClassName="emoji"/>
           </div>
