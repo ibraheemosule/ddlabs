@@ -95,63 +95,56 @@ div.statistics-container {
           font-size: 0.7em;
           font-weight: 800;
           color: #808080;
-          
-      
+        }
+        .ce {
+            border-top-style: none;
+            border-bottom-style: none;
+            border-left-style: none;
+        }
+        .de {
+            border-top-style: none;
+            border-bottom-style: none;
+            border-left-style: none;
+        }
+        .ee {
+            border-top-style: none;
+            border-bottom-style: none;
+            border-left-style: none;
+        }
+        .fe {
+            border-top-style: none;
+            border-bottom-style: none;
+            border-left-style: none;
+            border-right-style: none;
+        }
+        }
+        .line {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 15%;
+          margin-left: 4.5%;
+          margin-right: 4.5%;
+          align-items: flex-end;
       }
-      .ce {
-          border-top-style: none;
-          border-bottom-style: none;
-          border-left-style: none;
+      .blue {
+          width: 5.2px;
+          height: 90px;
+          background-color: rgb(76, 179, 243);
+          border-top-right-radius: 0.9em;
+          border-top-left-radius: 0.9em;
       }
-      .de {
-          border-top-style: none;
-          border-bottom-style: none;
-          border-left-style: none;
+      .eight {
+          height: 23px;
       }
-      .ee {
-          border-top-style: none;
-          border-bottom-style: none;
-          border-left-style: none;
+      .seven {
+          height: 40px;
       }
-      .fe {
-          border-top-style: none;
-          border-bottom-style: none;
-          border-left-style: none;
-          border-right-style: none;
+      .nine {
+          height: 32px;
       }
+      .ten {
+          height: 50px;
       }
-      
-      
-      .line {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 15%;
-        margin-left: 4.5%;
-        margin-right: 4.5%;
-        align-items: flex-end;
-    }
-    .blue {
-        width: 5.2px;
-        height: 90px;
-        background-color: rgb(76, 179, 243);
-        border-top-right-radius: 0.9em;
-        border-top-left-radius: 0.9em;
-    }
-    .eight {
-        height: 23px;
-    }
-    .seven {
-        height: 40px;
-    }
-    .nine {
-        height: 32px;
-    }
-    .ten {
-        height: 50px;
-    }
-
-    
-
     }
     div.first {
       border-right: none;
